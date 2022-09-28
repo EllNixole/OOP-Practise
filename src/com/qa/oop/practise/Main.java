@@ -11,7 +11,7 @@ public class Main {
 		apple.category = "Fruit";
 		apple.rating = 4.5;
 		apple.discountPercentage = 5;
-		apple.isAvailable = 'Y';
+		apple.isAvailable = true;
 		
 		Product carrot = new Product();
 		carrot.id = 2;
@@ -20,7 +20,7 @@ public class Main {
 		carrot.category = "Vegetable";
 		carrot.rating = 4.0;
 		carrot.discountPercentage = 0;
-		carrot.isAvailable = 'Y';
+		carrot.isAvailable = true;
 		
 		Product strawberry = new Product();
 		strawberry.id = 3;
@@ -29,7 +29,7 @@ public class Main {
 		strawberry.category = "Fruit";
 		strawberry.rating = 4.8;
 		strawberry.discountPercentage = 10;
-		strawberry.isAvailable = 'N';
+		strawberry.isAvailable = false;
 		
 		System.out.println("Id: " + apple.id);
 		System.out.println("Name: " + apple.name);
@@ -39,6 +39,7 @@ public class Main {
 		System.out.println("Discount: " + apple.discountPercentage + "%");
 		System.out.println("In Stock: " + apple.isAvailable);
 		System.out.println();
+		
 		System.out.println("Id: " + carrot.id);
 		System.out.println("Name: " + carrot.name);
 		System.out.println("Price: " + carrot.price);
@@ -47,6 +48,7 @@ public class Main {
 		System.out.println("Discount: " + carrot.discountPercentage + "%");
 		System.out.println("In Stock: " + carrot.isAvailable);
 		System.out.println();
+		
 		System.out.println("Id: " + strawberry.id);
 		System.out.println("Name: " + strawberry.name);
 		System.out.println("Price: " + strawberry.price);

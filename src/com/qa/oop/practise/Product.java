@@ -9,6 +9,6 @@ public class Product {
 	String category;
 	double rating;
 	int discountPercentage;
-	char isAvailable;
+	boolean isAvailable;
 
 }
