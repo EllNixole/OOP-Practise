@@ -2,7 +2,7 @@ package com.qa.oop.practise;
 
 public class Product {
 	
-	
+	// 1. Working with classes and objects
 	int id;
 	String name;
 	double price;
@@ -11,6 +11,8 @@ public class Product {
 	int discountPercentage;
 	boolean isAvailable;
 	
+	
+	// 4.Working with static members
 	static String SELLER_NAME;
 	static String CONTACT_NO;
 	static String EMAIL_ADDRESS;
@@ -21,11 +23,11 @@ public class Product {
 		b = "0743785477";
 		c = "asda@asda.com";
 		
-		return a + "\n" + b + "\n" + c;
+		return "Name: " + a + "\nContact Number: " + b + "\nEmail Address: " + c;
 	}
 	
 
-	
+	// 3. Working with constructors
 	public Product(int id, String name, double price, String category, double rating, int discountPercentage,
 			boolean isAvailable) {
 		this.id = id;
@@ -37,7 +39,7 @@ public class Product {
 		this.isAvailable = isAvailable;
 	}
 
-	//Task 2: Methods.
+	// 2: Working with methods
 	
 	//Product info method.
 	void productInfo() {
