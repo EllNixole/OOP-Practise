@@ -11,8 +11,14 @@ public class Main {
 		Product strawberry = new Product(3, "Fresh Strawberries", 2.50, "Fruit", 4.8, 50, false);
 		
 		carrot.productInfo();
+		carrot.discountedPrice();
+		carrot.finalPrice();
+		System.out.println();
+		
 		apple.discountedPrice();
 		strawberry.finalPrice();
+		
+		System.out.println(Product.sellerContactDetails(Product.SELLER_NAME, Product.CONTACT_NO, Product.EMAIL_ADDRESS));
 		
 		
 		

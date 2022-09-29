@@ -11,7 +11,20 @@ public class Product {
 	int discountPercentage;
 	boolean isAvailable;
 	
+	static String SELLER_NAME;
+	static String CONTACT_NO;
+	static String EMAIL_ADDRESS;
 	
+	
+	static String sellerContactDetails(String a, String b, String c) {
+		a = "ASDA";
+		b = "0743785477";
+		c = "asda@asda.com";
+		
+		return a + "\n" + b + "\n" + c;
+	}
+	
+
 	
 	public Product(int id, String name, double price, String category, double rating, int discountPercentage,
 			boolean isAvailable) {
