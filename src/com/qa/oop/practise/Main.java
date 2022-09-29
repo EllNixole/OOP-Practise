@@ -23,46 +23,19 @@ public class Main {
 		System.out.println(Product.sellerContactDetails(Product.SELLER_NAME, Product.CONTACT_NO, Product.EMAIL_ADDRESS));
 		
 		int[] numbers = {1,6,2,8,3,9,15,0};
-		System.out.println(sumArray(numbers));
-		System.out.println(smallestOfArray(numbers));
-		System.out.println(largestOfArray(numbers));
+		System.out.println(ArrayMethods.sumArray(numbers));
+		System.out.println(ArrayMethods.smallestOfArray(numbers));
+		System.out.println(ArrayMethods.largestOfArray(numbers));
+		System.out.println(ArrayMethods.countOfEvens(numbers));
 		
 		
 			
 		}
 	
-	// 5.a. Method to return the sum of all array elements
-	static int sumArray(int[] numbers){
-		
-		
-		int total;
-		total = 0;
-		
-		for(int number : numbers)
-		{
-			total += number;
-			
-		}
-		return total;
-		
-	
-	}
-	
-	// 5.b.  Method to return the smallest number of the array elements
-	static int smallestOfArray(int[] numbers) {
-		Arrays.sort(numbers);
-		return numbers[0];
-	}
-	
-	// 5.c. Method to return the highest number of the array elements
-	static int largestOfArray(int[] numbers) {
-		Arrays.sort(numbers);
-		int n = numbers.length;
-		return numbers[n - 1];
-	}
+}
 	
 		
-	}
+	
 
 	
 
