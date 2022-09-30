@@ -21,6 +21,8 @@ public class Product {
 		this.discountPercentage = discountPercentage;
 		this.isAvailable = isAvailable;
 	}
+	
+	
 
 	// method to find out the amount discounted.
 	double discountedPrice() {
@@ -39,4 +41,33 @@ public class Product {
 		}
 		return productName;
 	}
+	
+	
+		
+
+		// Method to return the product with highest price
+		static String highestProduct(Product[] products) {
+			double highestPrice = products[0].discountedPrice();
+			String productName = products[0].name;
+			for (Product product : products) {
+				if (product.discountedPrice() > highestPrice) {
+					highestPrice = product.discountedPrice();
+					productName = product.name;
+				}
+			}
+			return productName;
+		}
+		
+		// Method to return the product with highest rating
+				static String highestRatingProduct(Product[] products) {
+					double highestRating = products[0].rating;
+					String productName = products[0].name;
+					for (Product product : products) {
+						if (product.rating > highestRating) {
+							highestRating = product.rating;
+							productName = product.name;
+						}
+					}
+					return productName;
+				}
 }

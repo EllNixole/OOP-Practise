@@ -12,8 +12,14 @@ public class ArrayOfObjects {
 		products[3] = new Product(4, "Cherries", 2.00, "Fruit", 5.0, 50, true);
 		products[4] = new Product(5, "Broccoli", 0.85, "Vegetable", 2.5, 10, true);
 
-		String theCheapestItem = Product.cheapestProduct(products);
-		System.out.println("The cheapest discounted item is: " + theCheapestItem);
+		String cheapestItem = Product.cheapestProduct(products);
+		System.out.println("The cheapest item is: " + cheapestItem);
+		
+		String mostExpensiveItem = Product.highestProduct(products);
+		System.out.println("The most expensive item is: " + mostExpensiveItem);
+		
+		String highestRatedProduct = Product.highestRatingProduct(products);
+		System.out.println("The item with the highest rating is: " + highestRatedProduct);
 
 	}
 
